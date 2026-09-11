@@ -25,8 +25,8 @@ DB_PATH = os.environ.get("DB_PATH", "shop.db")
 # ──────────────────────────────────────────────────────────────────────────
 
 CURRENCIES = {
-    "ru": {"code": "RUB", "symbol": "₽", "rate_from_tjs": 8.7},
-    "en": {"code": "USD", "symbol": "$", "rate_from_tjs": 0.092},
+    "ru": {"code": "TJS", "symbol": "смн", "rate_from_tjs": 1.0},
+    "en": {"code": "TJS", "symbol": "смн", "rate_from_tjs": 1.0},
 }
 
 LANGUAGE_NAMES = {
@@ -75,7 +75,7 @@ PRODUCTS = {
             "A dense, chewy natural sweet with no added sugar or flour. 5 flavors to choose 👇",
         },
         "photo": None,  # TODO: сюда встанет фото, которое вы пришлёте
-        "price_tjs": 80,
+        "price_tjs": 85,
         "variants": {
             "apple": {
                 "name": {"ru": "🟢 Яблоко (зелёное)", "en": "🟢 Apple (green)"},
@@ -154,4 +154,4 @@ PRODUCTS = {
 }
 
 # Пресеты количества (в кг), которые предлагаются кнопками при выборе объёма
-QTY_PRESETS = [0.5, 1, 2, 3, 5]
+QTY_PRESETS = [10, 25, 50, 100]
